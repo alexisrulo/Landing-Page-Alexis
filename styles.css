@@ -25,9 +25,13 @@ body{
     font-weight: 500;
     transition: 1s 0.1s;
 }
-.header a:hover{
+.header .links:hover{
     color: yellow;
 }
+.logo a:hover{
+    color: yellow;
+}
+
 .nav__links{
     margin-left: auto;
 }
@@ -66,16 +70,29 @@ a{
 .content__text p{
     font-size: 18px;
     color: #e5e7eb;
+    margin-bottom: 20px;
 }
+.content__img img{
+    transition: 0.3s 0.1s;
+}
+.content__img img:hover{
+    transform: scale(1.05);
+}
+
 .signup{
     background-color: #3882f6;
     padding: 8px 30px;
     border-radius: 8px;
     border: 0px solid;
     color: white;
-    margin-top: 20px;
     font-size: 18px;
+    transition: 0.2s 0.1s;
 }
+
+.signup:hover{
+    transform: scale(1.05);
+}
+
 .text__select{
     display: flex;
     justify-content: center;
@@ -96,6 +113,7 @@ a{
 }
 .moreinfo p{
     text-align: center;
+    width: 300px;
 }
 
 .quote{
@@ -119,6 +137,9 @@ a{
     font-weight: 800;
     align-self: flex-end;
 }
+.quote__autor a{
+    color: black;
+}
 .lastSignup{
     display: flex;
     justify-content: center;
@@ -131,12 +152,8 @@ a{
     color: white;
 }
 .lastSignup button{
-    background-color: #3882f6;
-    padding: 6px 30px;
-    border-radius: 10px;
     border: 1px solid white;
-    color: white;
-    font-size: 20px;
+
 }
 .lastSignup p{
     margin-top: 10px;
@@ -150,4 +167,11 @@ a{
     padding: 40px;
     color: white;
     background-color: #1f2937;
+}
+
+.moreinfo div{
+    transition: 0.2s 0.1s;
+}
+.moreinfo div:hover{
+    transform: scale(1.1);
 }
